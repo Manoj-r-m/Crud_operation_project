@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg,#E3CD81FF, #B1B3B3FF);
+    animation: gradientAnimation 5s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+/* 
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+} */
+
+.form-container {
+    background-color: #e9e2e235;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], #filterInput {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input:invalid {
+    border-color: #dc3545;
+}
+
+input:valid {
+    border-color: #28a745;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 105%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#deleteAll {
+    background-color: #ff6b6b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    /* background-color: #f2f2f2; */
+    background: linear-gradient(120deg,#E3CD81FF, #B1B3B3FF);
+
+}
+
+.action-buttons button {
+    display: inline-block;
+    width: 70px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.action-buttons button.modify {
+    background-color: #007BFF;
+    color: white;
+    margin-right: 10px;
+}
+
+.action-buttons button.delete {
+    background-color: #DC3545;
+    color: white;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#filterInput {
+    margin-bottom: 30px;
+}

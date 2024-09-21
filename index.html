@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD OPERATION WEB APPLICATION</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="form-container">
+        <h2>USER DETAILS</h2>
+        <form id="userForm">
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" pattern="[A-Za-z\s]+" title="Name must only contain letters" required>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Last Name:</label>
+                <input type="text" id="lname" pattern="[A-Za-z\s]+" title="Name must only contain letters" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Number:</label>
+                <input type="text" id="number" pattern="\d{10}" title="Number must be exactly 10 digits" required>
+            </div>
+
+            <button type="submit">Submit</button>
+            <button id="deleteAll" type="button">Delete All</button>
+            
+            <!-- <input type="text" id="filterInput" placeholder="Filter by name, email, or number" /> -->
+        </form>
+    </div>
+
+    <div class="table-container">
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+
+                    <th>Email</th>
+                    <th>Number</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="crud.js"></script>
+
+</body>
+</html>
